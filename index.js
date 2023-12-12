@@ -1,4 +1,5 @@
 const proyectosContainer = document.getElementById("proyectosContainer");
+// const titleAuto = document.getElementById("h1-title");
 const aside = document.getElementsByTagName("aside")[0];
 const getTecnologias = (tecnologias) => {
   let res = "";
@@ -25,9 +26,13 @@ const makePresentacion = () => {
   nuevaPresentación.innerHTML +=`
     <img src="${informacionPersonal.imagen}">
   `
-  // nuevaPresentación.innerHTML += `
-  // <h2>${informacionPersonal.nombre}<h2>
-  // `
+  // agregar el nombre en el icono para las partes de las tecnologias
+  nuevaPresentación.innerHTML += `
+  <h2>${informacionPersonal.nombre}<h2>
+  `
+  nuevaPresentación.innerHTML += `
+  <p>${informacionPersonal.subtitulo}<p>
+  `
   informacionPersonal.otros.forEach(dato => {
     nuevaPresentación.innerHTML += `
     <div>
@@ -103,6 +108,13 @@ const getIconoRed = (red)=>{
   }
 }
 
+const getTitleNombre = ()=>{
+  const titleAuto = document.getElementById("h1-title");
+  titleAuto.innerHTML += `
+  <h2>${informacionPersonal.nombre}<h2>
+  `
+}
+
 //Ejecución
 proyectos.forEach((proyecto) => {
   const nuevoProyecto = document.createElement("div");
@@ -114,3 +126,5 @@ makePresentacion();
 makeIdiomas();
 makeTecnologias();
 makeRedes();
+getTitleNombre();
+
