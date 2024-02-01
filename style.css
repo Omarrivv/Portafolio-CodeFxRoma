@@ -1,16 +1,16 @@
 :root{
-  --color-text-titulos: #ffffff;
+  --color-text-titulos: #f1e8e8;
   --color-texto: rgba(255, 255, 255, 0.867);
-  --color-acento: #E6E4C6;
+  --color-acento: #134692d3;
   --color-fondo: #0E3A47;
   --color-fondo-tarjeta: #ffffff27;
 }
 body{
   background-color: var(--color-fondo);
-  margin: 0;
+  margin: 40;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 195px 1fr;
   grid-template-areas: 
     "aside header"
     "aside main"
@@ -18,17 +18,23 @@ body{
 }
 h1, h2, h3, h4, h5, h6{
   color: var(--color-text-titulos);
+  text-align: center;
 }
 h1{
-  font-size: xxx-large;
+  /* font-size: xxx-large; */
+  font-size: xx-large;
 }
 p, span, h3{
   color: var(--color-texto);
+  /* text-wrap:wrap; */
 }
+/* p{
+  margin-top: 0%;
+} */
 header{
   margin-left: 20px;
   grid-area: header;
-  background-image: url("./img/fondo.png");
+  /* background-image: url("./img/fondo.jpeg"); */
   background-color: #73b091;
   display: flex;
   justify-content: space-between;
