@@ -49,17 +49,3 @@ app.get("/style.css", function (req, res) {
 app.listen(port, function () {
     console.log(`El servidor está funcionando en http://localhost:${port}`);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
