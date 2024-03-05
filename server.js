@@ -21,7 +21,7 @@ conexion.connect(function (err) {
 });
 app.use(express.json()); // analiza el cuerpo de las solicitudes HTTP q contirnr datos de formato JSON en una solicitud POST : analiza los dattosq y lo convierten en objeto 
 app.use(cors());
-app.use(express.urlencoded({ extended: false })); // Este middleware se utiliza para analizar el cuerpo de las solicitudes HTTP que contienen datos codificados en formato x-www-form-urlencoded. Esto es utilizado cuando los datos se envían desde formularios HTML. Similar al middleware express.json(), este middleware analiza los datos y los convierte en un objeto JavaScript accesible a través de req.body. La opción `{ extendida
+app.use(express.urlencoded({ extended: false })); // Este middleware se utiliza para analizar el cuerpo de las solicitudes HTTP que contienen datos codificados en formato x-www-form-urlencoded. Esto es utilizado cuando los datos se envían desde formularios HTML. Similar al middleware express.json(), este middleware analiza los datos y los convierte en un objeto JavaScript accesible a través de req.body. La opción `
 
 app.get("/", function (req, res) {
     var filePath = path.join(__dirname, "./index.html");
@@ -43,9 +43,6 @@ app.get("/style.css", function (req, res) {
     var filePath = path.join(__dirname, "./style.css");
     res.sendFile(filePath);  // dirname == representa el directorio actual del archivo
 });
-
-
-
 app.listen(port, function () {
     console.log(`El servidor está funcionando en http://localhost:${port}`);
 });

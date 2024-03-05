@@ -5,21 +5,27 @@ const getTecnologias = (tecnologias) => {
   let res = "";
   tecnologias.forEach((tecnologia) => {
     res += `<span class='tecnologia'>${tecnologia}</span> `;
+    console.log(res)
   });
   return res;
 };
-
 const getProyecto = (proyecto) => `
   <img src='img/proyectos/${proyecto.imagen}' alt='${proyecto.titulo} loading="lazy"'>
   <div>
     <h3>${proyecto.titulo}</h3>
     <p>${proyecto.descripcion}</p>
+    <hr>
+    <p>${proyecto.creadores}<p/>
+    <hr>
+    <p>Acontinuacion Una Imagen del Desarrollo proceso atravez de la plataforma youtube</p>
+    <img src='img/proyectos/${proyecto.proceso_automatizacion}'>
     <p>Tecnologías: ${getTecnologias(proyecto.tecnologias)}</p>
   </div>
-
+  <!-- hipervínculo -->
   <a ${proyecto.link ? 'href='+proyecto.link : "class=disabled"} target="_blank">Ver proyecto</a>
 `;
-
+// proyecto.link ? 'href='+proyecto.link : "class=disabled": Esta es una expresión ternaria que verifica si proyecto.link es verdadero o falso. Si proyecto.link es verdadero, entonces se devuelve la cadena 'href='+proyecto.link, que establece el atributo href del enlace como el valor del enlace del proyecto. Si proyecto.link es falso (por ejemplo, si proyecto.link es null o undefined), entonces se devuelve la cadena "class=disabled", que establece la clase del enlace como disabled.
+// target="_blank": Este atributo indica al navegador que abra el enlace en una nueva pestaña o ventana.
 const makePresentacion = () => {
   const nuevaPresentación = document.createElement("div");
   nuevaPresentación.classList = "presentacion";
@@ -43,7 +49,6 @@ const makePresentacion = () => {
   })
   aside.appendChild(nuevaPresentación);
 }
-
 const makeIdiomas = () => {
   const nuevoIdiomas = document.createElement("div");
   nuevoIdiomas.classList = "idiomas";
@@ -57,7 +62,6 @@ const makeIdiomas = () => {
   })
   aside.appendChild(nuevoIdiomas);
 }
-
 const makeTecnologias = () => {
   const nuevoTecnologias = document.createElement("div");
   nuevoTecnologias.id = "tecnologias";

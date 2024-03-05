@@ -1,12 +1,14 @@
 :root{
-  --color-text-titulos: #f1e8e8;
+  --color-text-titulos: #ffffff;
   --color-texto: rgba(255, 255, 255, 0.867);
-  --color-acento: #134692d3;
-  --color-fondo: #0E3A47;
+  --color-acento: #1c0abed3;
+  --color-fondo: #111148;
   --color-fondo-tarjeta: #ffffff27;
 }
 body{
   background-color: var(--color-fondo);
+  /* background-color: linear-gradient(); */
+  /* background: linear-gradient(to bottom, #01222e 5%, #0b8fbe 100%); */
   margin: 40;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: grid;
@@ -35,7 +37,8 @@ header{
   margin-left: 20px;
   grid-area: header;
   /* background-image: url("./img/fondo.jpeg"); */
-  background-color: #73b091;
+  /* background-color: #6fb2e8;*/
+  background: linear-gradient(to bottom, #01222e 5%, #0b8fbe 100%);
   display: flex;
   justify-content: space-between;
   border-bottom-left-radius: 5px;
@@ -117,7 +120,8 @@ a.disabled{
 }
 
 .tarjeta{
-  background-color: var(--color-fondo-tarjeta) ;
+  /* background-color: var(--color-fondo-tarjeta) ; */
+  background: linear-gradient(to bottom, #01222e 5%, #0b8fbe 100%);
   border-radius: 5px;
 }
 
