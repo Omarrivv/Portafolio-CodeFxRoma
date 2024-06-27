@@ -10,6 +10,16 @@ const proyectos = [
     tecnologias: ["Javascript","HTML", "CSS", "BD (MYSQL)", "Express", "NodeJS"],
   },
   {
+    titulo: "Reserva de Citas Para MachaBarberShop",
+    descripcion:"Fue Un sistema para administrar todo el procedimiento que hace barberia venta ,pagos a barberos , etc",
+    creadores : "OMAR FELIX RIVERA ROSAS",
+    link: "https://youtu.be/MRFVRMbrroE?si=1qGUru3J93pjRk19",
+    proceso_automatizacion : "citas.png",
+    fecha: "01/12/2023",
+    imagen: "citas.png",
+    tecnologias: ["Javascript","HTML", "CSS", "BD (SQLSERVER)", "JAVA(JAKARTA)", "DOCKER"],
+  },
+  {
     titulo: "Juego De Mini Micraft",
     descripcion:"Fue A Base De Un tutorial Que Me Pude Ver en Youtube",
     creadores : "bueno el credito yo le daria al video de youtube que mire yo despues solo quise agregarles un poco mas pero es un interesante proyecto",
@@ -18,6 +28,16 @@ const proyectos = [
     fecha: "01/06/2023",
     imagen: "fondo-python.png",
     tecnologias: ["Python", "Librerias de Python"],
+  },
+  {
+    titulo : "Automatización de Envíos por Email usando Google Apps Script, Sheets y Forms!",
+    descripcion : "En este video, te sumergirás en el fascinante mundo de la automatización con Google Apps Script. Descubre cómo puedes simplificar tareas repetitivas y ahorrar tiempo utilizando la potencia de la automatización. Desde la generación de archivos PDF hasta el envío automatizado de correos electrónicos, exploraremos cómo Apps Script puede transformar la manera en que trabajas con aplicaciones de Google como Sheets y Forms. ¡Aprende cómo escribir scripts personalizados para automatizar tus flujos de trabajo y llevar tu productividad al siguiente nivel!",
+    creadores : "OMAR FELIX RIVERA ROSAS",
+    link: "https://youtu.be/mv5Ns-YKezs?si=EGKYGe2sPEqkK9H1",
+    proceso_automatizacion : "image.png",
+    fecha: "02/02/2024",
+    imagen: "image.png",
+    tecnologias: ["Google Apps Script", "Sheets", "Forms"]
   },
   {
     titulo : "Escraedor de videos de Youtube",
